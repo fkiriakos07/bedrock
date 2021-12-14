@@ -1,11 +1,17 @@
+{#
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
 {% extends "careers/base.html" %}
 
-{% set meta_title = "Mozilla Careers &mdash; " + position.title + " &mdash; Open Positions" %}
-{% set meta_description = "Mozilla Careers &mdash; " + meta_description|truncate(175, end='…') %}
+{% block page_title %}Mozilla Careers — {{ position.title }} — Open Positions{% endblock %}
+{% block page_desc %}meta_description|truncate(175, end='…'){% endblock %}
 
 {% block body_class %}position-page{% endblock %}
 
-{% block content %}
+{% block careers_content %}
 <section class="job-post" id="job-post">
   <div class="job-row">
     <div>
@@ -13,8 +19,8 @@
         <strong>{{ position.title }}</strong>
       </div>
       <div class="title-location">
-        at 
-        {% if position.is_mofo %} 
+        at
+        {% if position.is_mofo %}
           Mozilla Foundation
         {% else %}
           Mozilla Corporation
@@ -120,5 +126,4 @@
     </div>
   </div>
 </section>
-
 {% endblock %}

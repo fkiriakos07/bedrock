@@ -1004,7 +1004,7 @@
         "css/externalpages/pocket/components/add.scss"
       ],
       "name": "pocket-add"
-    }, 
+    },
     {
       "files": [
         "css/externalpages/pocket/style.scss",
@@ -1689,9 +1689,16 @@
     },
     {
       "files": [
-        "js/base/dnt-helper.js"
+        "js/careers/base.js"
       ],
-      "name": "careers-dnt-helper"
+      "name": "careers-base"
+    },
+    {
+      "files": [
+        "js/careers/listings.js",
+        "js/careers/filters.js"
+      ],
+      "name": "careers-listings"
     }
   ]
 }
